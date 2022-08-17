@@ -11,8 +11,8 @@ static const char *DEFAULT_WIN_BG     = "white";
 static const char *DEFAULT_WIN_FG     = "black";
 static const char *DEFAULT_MARK_COLOR = NULL;  /* NULL means it will default to window foreground */
 #if HAVE_LIBFONTS
-static const char *DEFAULT_BAR_BG     = NULL;  /* NULL means it will default to window background */
-static const char *DEFAULT_BAR_FG     = NULL;  /* NULL means it will default to window foreground */
+static const char *DEFAULT_BAR_BG     = "#23252E";  /* NULL means it will default to window background */
+static const char *DEFAULT_BAR_FG     = "white";  /* NULL means it will default to window foreground */
 static const char *DEFAULT_FONT       = "monospace-10";
 
 /* if true, statusbar appears on top of the window */
