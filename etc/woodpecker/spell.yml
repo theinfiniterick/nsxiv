@@ -1,0 +1,9 @@
+branches: master
+
+# NOTE: codespell not available on stable alpine, use edge
+pipeline:
+  spell-check:
+    image: alpine:edge
+    commands: |
+      apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing py3-codespell git >/dev/null
+      git ls-files | sed '/\.png$/d' | xargs codespell
